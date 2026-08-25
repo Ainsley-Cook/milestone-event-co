@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   initLightbox();
   initContactForm();
   initPackagePrefill();
+  initScrollReveal();
+  initCounters();
 });
 
 function initNavToggle() {
@@ -121,4 +123,65 @@ function initPackagePrefill() {
   if (label && noteField && !noteField.value) {
     noteField.value = "Hi, I'd like to learn more about the " + label + ".";
   }
+}
+
+function initScrollReveal() {
+  var targets = document.querySelectorAll('.reveal, .reveal-stagger, .hl');
+  if (!targets.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function (el) { el.classList.add('in-view'); });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  targets.forEach(function (el) { observer.observe(el); });
+}
+
+function initCounters() {
+  var counters = document.querySelectorAll('[data-count-to]');
+  if (!counters.length) return;
+
+  function animateCounter(el) {
+    var target = parseFloat(el.getAttribute('data-count-to'));
+    var suffix = el.getAttribute('data-count-suffix') || '';
+    var duration = 1200;
+    var start = null;
+
+    function step(timestamp) {
+      if (!start) start = timestamp;
+      var progress = Math.min((timestamp - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var current = Math.round(target * eased);
+      el.textContent = current + suffix;
+      if (progress < 1) window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+  }
+
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(function (el) {
+      el.textContent = el.getAttribute('data-count-to') + (el.getAttribute('data-count-suffix') || '');
+    });
+    return;
+  }
+
+  var counterObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  counters.forEach(function (el) { counterObserver.observe(el); });
 }

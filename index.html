@@ -7,14 +7,14 @@
 <meta name="description" content="Milestone Event Co. plans pop-up fitness classes, community craft nights, and brand activations that feel like a party. Private company events too.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">Milestone <span>Event Co.</span></a>
+    <a href="index.html" class="logo"><span class="logo-bold">Milestone</span><span class="logo-italic">Event Co.</span></a>
     <nav class="main-nav">
       <a href="index.html" aria-current="page">Home</a>
       <a href="about.html">About</a>
@@ -37,24 +37,22 @@
 
 <main>
 
-  <section class="hero">
+  <section class="hero hero-no-image">
     <div class="container">
       <div class="hero-copy">
         <span class="eyebrow">Pop-Ups, Parties &amp; Brand Events</span>
-        <h1>Events people actually want to show up for.</h1>
+        <h1>Events people actually <em class="hl">want to show up for</em>.</h1>
         <p>Milestone Event Co. plans pop-up fitness classes, community craft nights, and brand activations that feel like a party — not a meeting. Need something private for your own team? We do that too, just without the boring parts.</p>
         <div class="btn-row">
           <a href="contact.html" class="btn btn-primary">Plan My Event</a>
           <a href="past-events.html" class="btn btn-outline">See Our Work</a>
         </div>
         <div class="hero-stats">
-          <div><strong>250+</strong><span>pop-ups &amp; parties since 2016</span></div>
-          <div><strong>40+</strong><span>neighborhoods reached</span></div>
-          <div><strong>94%</strong><span>guest satisfaction rate</span></div>
+          <div><strong data-count-to="250" data-count-suffix="+">0</strong><span>pop-ups &amp; parties since 2016</span></div>
+          <div><strong data-count-to="40" data-count-suffix="+">0</strong><span>neighborhoods reached</span></div>
+          <div><strong data-count-to="94" data-count-suffix="%">0</strong><span>guest satisfaction rate</span></div>
+          <div><strong data-count-to="96" data-count-suffix="%">0</strong><span>of clients rebook for their next event</span></div>
         </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&q=80&auto=format&fit=crop" alt="Friends gathered outdoors under string lights at an evening community event">
       </div>
     </div>
   </section>
@@ -66,7 +64,7 @@
         <h2>Four kinds of events. One team that makes them fun.</h2>
         <p>Whatever you're hosting, we bring the same energy — great vendors, tight logistics, and a room full of people having a genuinely good time.</p>
       </div>
-      <div class="grid grid-4">
+      <div class="grid grid-4 reveal-stagger">
         <div class="card service-card">
           <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80&auto=format&fit=crop" alt="Group fitness class working out together on pink mats in a bright studio">
           <h3>Pop-Up Fitness &amp; Wellness</h3>
@@ -95,9 +93,9 @@
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">Why Milestone</span>
-        <h2>The details are the whole job — so we obsess over them.</h2>
+        <h2>The details are the whole job — so we <em class="hl">obsess over them</em>.</h2>
       </div>
-      <div class="grid grid-3">
+      <div class="grid grid-3 reveal-stagger">
         <div class="card">
           <h3>One planner, zero chaos</h3>
           <p>Your event has one point of contact from first idea to load-out — no confusing hand-offs, no games of telephone.</p>
@@ -123,10 +121,14 @@
         </div>
         <a href="past-events.html" class="btn btn-outline">See Full Portfolio</a>
       </div>
-      <div class="work-strip">
+      <div class="work-reel">
         <a href="past-events.html#sweatsocial">
           <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=700&q=80&auto=format&fit=crop" alt="Silhouette of a woman practicing yoga at sunset during the SweatSocial rooftop pop-up">
           <span class="tag">SweatSocial — Rooftop Yoga Pop-Up</span>
+        </a>
+        <a href="past-events.html#wick-and-wax">
+          <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=700&q=80&auto=format&fit=crop" alt="Colorful craft supplies laid out for the Wick and Wax candle-making night">
+          <span class="tag">Wick &amp; Wax — Candle-Making Night</span>
         </a>
         <a href="past-events.html#glow-beauty">
           <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700&q=80&auto=format&fit=crop" alt="Model at the Glow Beauty Co influencer launch day event">
@@ -136,20 +138,24 @@
           <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=700&q=80&auto=format&fit=crop" alt="Shoppers browsing a clothing rack at the Pop and Pine pop-up shop launch">
           <span class="tag">Pop &amp; Pine — Pop-Up Shop Launch</span>
         </a>
+        <a href="past-events.html#nightcap-social">
+          <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=700&q=80&auto=format&fit=crop" alt="Moody, warmly lit bar interior set up for the Nightcap Social rooftop mixer">
+          <span class="tag">Nightcap Social — Rooftop Mixer</span>
+        </a>
       </div>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <div class="cta-band">
+      <div class="cta-band reveal">
         <div>
           <h2>Let's plan something people remember.</h2>
           <p>Tell us about your event and we'll follow up within one business day with next steps.</p>
         </div>
         <div class="btn-row">
           <a href="tel:+13855550142" class="btn btn-light">Call (385) 555-0142</a>
-          <a href="contact.html" class="btn" style="background:var(--charcoal);color:var(--ivory);">Plan My Event</a>
+          <a href="contact.html" class="btn" style="background:var(--ink);color:var(--ivory);">Plan My Event</a>
         </div>
       </div>
     </div>
@@ -161,7 +167,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="logo">Milestone <span>Event Co.</span></div>
+        <div class="logo"><span class="logo-bold">Milestone</span><span class="logo-italic">Event Co.</span></div>
         <p>Pop-up fitness classes, craft nights, and brand activations — planned by people who actually attend parties. Based in Salt Lake City, working nationwide.</p>
         <a href="tel:+13855550142" class="btn btn-sage mt-32">Call (385) 555-0142</a>
       </div>
