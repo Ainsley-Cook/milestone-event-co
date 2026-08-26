@@ -342,7 +342,6 @@ section { padding: 88px 0; position: relative; }
 
 @media (max-width: 880px) {
   .hero .container { grid-template-columns: 1fr; }
-  .hero-collage { order: -1; }
 }
 
 /* ---------- Page header (non-home) ---------- */
