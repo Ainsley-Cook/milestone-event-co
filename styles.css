@@ -705,7 +705,7 @@ section { padding: 88px 0; position: relative; }
 .map-block .map-visual svg { width: 44px; height: 44px; fill: var(--ivory); }
 .map-block .map-caption { padding: 16px 20px; background: var(--ivory); font-size: 0.9rem; }
 
-form.contact-form {
+.contact-form {
   background: var(--ivory);
   border-radius: var(--radius);
   padding: 36px;
