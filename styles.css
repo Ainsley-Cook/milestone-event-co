@@ -356,10 +356,15 @@ section { padding: 88px 0; position: relative; }
   .hero-copy .eyebrow { margin-bottom: 0; }
   .hero-copy .btn-row {
     margin-top: 0;
+    flex-wrap: nowrap;
+    gap: 10px;
   }
   .hero-copy .btn-row .btn {
-    padding: 18px 32px;
-    font-size: 1.05rem;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 16px 10px;
+    font-size: 0.95rem;
+    white-space: nowrap;
   }
 }
 
