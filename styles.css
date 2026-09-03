@@ -342,16 +342,20 @@ section { padding: 88px 0; position: relative; }
 
 @media (max-width: 880px) {
   .hero .container { grid-template-columns: 1fr; }
-  .hero {
+  .hero { padding: 32px 0 40px; }
+  .hero-copy {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - 76px);
-    min-height: calc(100svh - 76px);
-    padding: 32px 0;
+    min-height: calc(100vh - 108px);
+    min-height: calc(100svh - 108px);
   }
   .hero-copy > p { display: none; }
   .hero-stats { display: none; }
+  .hero-copy .btn-row .btn {
+    padding: 18px 32px;
+    font-size: 1.05rem;
+  }
 }
 
 /* ---------- Page header (non-home) ---------- */
