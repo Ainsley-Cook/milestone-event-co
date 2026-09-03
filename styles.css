@@ -342,6 +342,16 @@ section { padding: 88px 0; position: relative; }
 
 @media (max-width: 880px) {
   .hero .container { grid-template-columns: 1fr; }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 76px);
+    min-height: calc(100svh - 76px);
+    padding: 32px 0;
+  }
+  .hero-copy > p { display: none; }
+  .hero-stats { display: none; }
 }
 
 /* ---------- Page header (non-home) ---------- */
