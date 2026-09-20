@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://milestone-event-co.vercel.app/sitemap.xml
