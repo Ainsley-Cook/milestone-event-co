@@ -312,6 +312,24 @@ section { padding: 88px 0; position: relative; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
 }
 
+/* ---------- Testimonials ---------- */
+.testimonial-card .quote {
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+.testimonial-card .testimonial-author {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cobalt);
+}
+
 /* Hero image collage */
 .hero-collage {
   display: grid;
