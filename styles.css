@@ -313,6 +313,16 @@ section { padding: 88px 0; position: relative; }
 }
 
 /* ---------- Testimonials ---------- */
+.testimonial-card .stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.testimonial-card .stars svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--highlight-dark);
+}
 .testimonial-card .quote {
   font-family: "Fraunces", serif;
   font-style: italic;
